@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetainViewController" customModule="Weather1" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Weather1" customModuleProvider="target">
             <connections>
                 <outlet property="animation" destination="ydp-zZ-QgO" id="gFg-fX-jDj"/>
                 <outlet property="dateLabel" destination="UPY-Lk-Rf8" id="6hF-Wm-A06"/>

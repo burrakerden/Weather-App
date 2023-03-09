@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITextFieldDelegate {
+class MainViewController: UIViewController {
     
     var viewModel = MainViewModel()
     
@@ -20,10 +20,6 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mainCollectionView: UICollectionView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
-    
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.isNavigationBarHidden = true
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,11 +42,9 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         mainCollectionView.register(UINib(nibName: "MainCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MainCollectionViewCell")
         gestureRecognizer()
         date()
+        navigationController?.navigationBar.tintColor = .black
         navigationItem.backButtonTitle = ""
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        nameTextField.text = ""
+        nameTextField.returnKeyType = .search
     }
     
     func date() {
@@ -67,7 +61,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
             if cName.count == 0 {
                 self.needAlert(title: "Error", message: "Enter valid city name.")
             } else {
-                let vc = DetainViewController()
+                let vc = DetailViewController()
                 vc.cityName = cityName
                 self.navigationController?.pushViewController(vc, animated: true)
             }
@@ -82,6 +76,24 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         let ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
+    }
+}
+
+//MARK: - Text Field
+
+extension MainViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        nameTextField.text = ""
+        nameTextField.placeholder = "Type city name"
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if nameTextField.text != "" {
+            getCoordData(cityName: nameTextField.text!.replacingOccurrences(of: " ", with: "+"))
+        } else {
+            nameTextField.placeholder = "Search field can't be empty"
+        }
+        return true
     }
 }
 

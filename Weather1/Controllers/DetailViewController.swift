@@ -8,8 +8,7 @@
 import UIKit
 import Lottie
 
-class DetainViewController: UIViewController {
-    
+class DetailViewController: UIViewController {
     
     var cityNameHolder: CoordApi?
     var main: Main?

@@ -11,8 +11,8 @@
 		9601849F29B8B62C00A86B98 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9601849D29B8B62C00A86B98 /* MainCollectionViewCell.xib */; };
 		9631DE11296EF7AE003574A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9631DE0F296EF7AE003574A5 /* MainViewController.swift */; };
 		9631DE12296EF7AE003574A5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9631DE10296EF7AE003574A5 /* MainViewController.xib */; };
-		9631DE15296F3908003574A5 /* DetainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9631DE13296F3908003574A5 /* DetainViewController.swift */; };
-		9631DE16296F3908003574A5 /* DetainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9631DE14296F3908003574A5 /* DetainViewController.xib */; };
+		9631DE15296F3908003574A5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9631DE13296F3908003574A5 /* DetailViewController.swift */; };
+		9631DE16296F3908003574A5 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9631DE14296F3908003574A5 /* DetailViewController.xib */; };
 		9631DE1E29701729003574A5 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9631DE1D29701729003574A5 /* ServiceManager.swift */; };
 		9631DE2129701745003574A5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9631DE2029701745003574A5 /* Alamofire */; };
 		9631DE2329701769003574A5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9631DE2229701769003574A5 /* Service.swift */; };
@@ -45,8 +45,8 @@
 		9601849D29B8B62C00A86B98 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		9631DE0F296EF7AE003574A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9631DE10296EF7AE003574A5 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		9631DE13296F3908003574A5 /* DetainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetainViewController.swift; sourceTree = "<group>"; };
-		9631DE14296F3908003574A5 /* DetainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetainViewController.xib; sourceTree = "<group>"; };
+		9631DE13296F3908003574A5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9631DE14296F3908003574A5 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		9631DE1D29701729003574A5 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		9631DE2229701769003574A5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		9631DE25297017AF003574A5 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			children = (
 				9631DE0F296EF7AE003574A5 /* MainViewController.swift */,
 				9631DE10296EF7AE003574A5 /* MainViewController.xib */,
-				9631DE13296F3908003574A5 /* DetainViewController.swift */,
-				9631DE14296F3908003574A5 /* DetainViewController.xib */,
+				9631DE13296F3908003574A5 /* DetailViewController.swift */,
+				9631DE14296F3908003574A5 /* DetailViewController.xib */,
 				9601849C29B8B62C00A86B98 /* MainCollectionViewCell.swift */,
 				9601849D29B8B62C00A86B98 /* MainCollectionViewCell.xib */,
 			);
@@ -281,7 +281,7 @@
 				9637D1612971963B0083A6C6 /* 1d.json in Resources */,
 				9637D15F297193DF0083A6C6 /* 9d-10d.json in Resources */,
 				96C1222E296EDDEA000CEF45 /* LaunchScreen.storyboard in Resources */,
-				9631DE16296F3908003574A5 /* DetainViewController.xib in Resources */,
+				9631DE16296F3908003574A5 /* DetailViewController.xib in Resources */,
 				9631DE12296EF7AE003574A5 /* MainViewController.xib in Resources */,
 				9637D171297198BB0083A6C6 /* 13d.json in Resources */,
 				9637D16F297198860083A6C6 /* 11n.json in Resources */,
@@ -310,7 +310,7 @@
 				9631DE11296EF7AE003574A5 /* MainViewController.swift in Sources */,
 				9631DE26297017AF003574A5 /* ImageViewExtension.swift in Sources */,
 				96CCF98229716C0C00BBEDE6 /* CoordApi.swift in Sources */,
-				9631DE15296F3908003574A5 /* DetainViewController.swift in Sources */,
+				9631DE15296F3908003574A5 /* DetailViewController.swift in Sources */,
 				96C12222296EDDE9000CEF45 /* AppDelegate.swift in Sources */,
 				9601849E29B8B62C00A86B98 /* MainCollectionViewCell.swift in Sources */,
 				96C12224296EDDE9000CEF45 /* SceneDelegate.swift in Sources */,
